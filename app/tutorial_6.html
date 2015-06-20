@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
   <head>
-    <title>Angular Material - Starter App</title>
+    <title>Angular Material - Starter Ap en español</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,36 +14,36 @@
   </head>
 
   <!--
-    ✓ Create Angular shell app
-    ✓ Use `bower install angular-material`
-    ✓ Load the CSS (before our app.css),
-    ✓ Load the angular-material.js library and its dependent angular-aria.js and angular-animate.js libraries.
-    ✓ Then set the module dependency on 'ngMaterial'
-    ✓ Use wirefames to determine containers
-    ✓ Configure layouts
-    ✓ Lock open the sideNav, add shadow
-    ✓ Add content
-    ✓ Register Icons
-    ✓ Integrate with App logic
-      ✓ use ng-repeat
-      ✓ load app logic
-      ✓ add controller
+    ✓ Crea el cascarón de la ap de Angular
+    ✓ Usa `bower install angular-material`
+    ✓ Carga el CSS (antes que nuestro app.css),
+    ✓ Carga la librerí de angular-material.js y las librerías de las que depende angular-aria.js y angular-animate.js.
+    ✓ Después Agrega la dependencia del módulo 'ngMaterial'
+    ✓ Usa los wirefames para determinar los contenedores
+    ✓ Configura los layouts containedores
+    ✓ Asegura que la sideNav esté abierta y agregale sombra
+    ✓ Agrega contenido HTML (código duro)
+    ✓ Integrar con lógica de la App
+      ✓ carga la lógica de la ap de 'usuarios'
+      ✓ usa ng-repeat
+      ✓ agrega controlador
+    ✓ Registra los íconos
 
-    -> Add Responsiveness
+    -> Agrega Responsividad
+    -> Agregar clicks a los botones
+    -> Arreglar los íconos de contacto
 
-    Fix Aria
-    Add Button clicks
-    Fix Contact Icons
-    Add Theming support
+    Reparar alertas de Aria
+    Agregar soporte para Tema
   -->
 
-  <body ng-app="starterApp" layout="column" ng-controller="UserController as ul">
+  <body ng-app="starterAp" layout="column" ng-controller="UserController as ul">
 
     <md-toolbar layout="row">
       <md-button class="menu" hide-gt-sm ng-click="ul.toggleList()">
         <md-icon md-svg-icon="menu" ></md-icon>
       </md-button>
-      <h1>Angular Material - Starter App</h1>
+      <h1>Angular Material - Starter Ap en español</h1>
     </md-toolbar>
 
     <div flex layout="row">
@@ -83,7 +83,7 @@
     <script type="text/javascript">
 
       angular
-          .module('starterApp', ['ngMaterial', 'users'])
+          .module('starterAp', ['ngMaterial', 'users'])
           .config(function($mdIconProvider){
 
               $mdIconProvider
@@ -94,8 +94,6 @@
                   .icon("hangouts"   , "./assets/svg/hangouts.svg"    , 512)
                   .icon("twitter"    , "./assets/svg/twitter.svg"     , 512)
                   .icon("phone"      , "./assets/svg/phone.svg"       , 512);
-
-
           });
 
     </script>

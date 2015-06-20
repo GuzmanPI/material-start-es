@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
   <head>
-    <title>Angular Material - Starter App</title>
+    <title>Angular Material - Starter Ap en español</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
@@ -14,31 +14,30 @@
   </head>
 
   <!--
-    ✓ Create Angular shell app
-    ✓ Use `bower install angular-material`
-    ✓ Load the CSS (before our app.css),
-    ✓ Load the angular-material.js library and its dependent angular-aria.js and angular-animate.js libraries.
-    ✓ Then set the module dependency on 'ngMaterial'
-    ✓ Use wirefames to determine containers
-    ✓ Configure layouts
-    ✓ Lock open the sideNav, add shadow
+    ✓ Crea el cascarón de la ap de Angular
+    ✓ Usa `bower install angular-material`
+    ✓ Carga el CSS (antes que nuestro app.css),
+    ✓ Carga la librerí de angular-material.js y las librerías de las que depende angular-aria.js y angular-animate.js.
+    ✓ Después Agrega la dependencia del módulo 'ngMaterial'
+    ✓ Usa los wirefames para determinar los contenedores
+    ✓ Configura los layouts containedores
+    ✓ Asegura que la sideNav esté abierta y agregale sombra
+    ✓ Agrega contenido HTML (código duro)
 
-    ✓ Add (hard-coded) HTML content
-    ✓ Register Icons
+    -> Integrar con lógica de la App
+      -> carga la lógica de la ap de 'usuarios'
+      - usa ng-repeat
+      - agrega controlador
 
-    -> Integrate with App logic
-      ✓ use ng-repeat
-      - load 'users' app logic
-      - add controller
-
-    Add Responsiveness
-    Add Theming
+    Registra los íconos
+    Agregar Responsividad
+    Agregar Tema
   -->
 
-  <body ng-app="starterApp" layout="column">
+  <body ng-app="starterAp" layout="column">
 
     <md-toolbar layout="row">
-      <h1>Angular Material - Starter App</h1>
+      <h1>Angular Material - Starter Ap en español</h1>
     </md-toolbar>
 
     <div flex layout="row">
@@ -81,16 +80,16 @@
     <script src="./bower_components/angular-aria/angular-aria.js"></script>
     <script type="text/javascript" src="./bower_components/angular-material/angular-material.js"></script>
 
-    <!-- Load App Logic -->
+    <!-- Cargar Lógica de la Ap -->
     <script src="./src/users/Users.js"></script>
     <script src="./src/users/UserController.js"></script>
     <script src="./src/users/UserService.js"></script>
 
     <script type="text/javascript">
 
-      angular.module('starterApp', ['ngMaterial', 'users'])
+      angular.module('starterAp', ['ngMaterial', 'users'])
               .run(function($log){
-                $log.debug("starterApp + ngMaterial + 'users' running...");
+                $log.debug("starterAp + ngMaterial + 'usuarios' running...");
               });
 
     </script>

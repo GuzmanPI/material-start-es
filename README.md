@@ -1,60 +1,64 @@
-# Angular Material-Start (Tutorials)
+# Angular Material-Start (Tutorial en español)
 
-This branch contains the tutorial steps and processes used to implement the start-app shown below:
+Este branch contiene el tutorial los pasos y procesos utilizados para implementar la start-app que se muestra a continuación: 
 
 ![material-starter-ux2](https://cloud.githubusercontent.com/assets/210413/6448551/70864488-c0e0-11e4-8767-c4e1e4c2f343.png)
 
-Above is a snaphot of the Starter-App with a **Master-Detail** layout: showing a list of users (left) and a user detail view (right). 
+Arriba está un snaphot de la Starter-App con el layout de un **Maestro-Detalle**: que muestra una lista de usuarios (izquierda) y una vista con el detalle de un usuario (derecha). 
 
-Also shown is the user experience that will be displayed for smaller device sizes. The responsive layout reveals the **menu** button that can be used to hide the user list and a **share** button that can be used to show the Share bottom sheet view.
+También se muestra la experiencia que será desplegada para dispositibos de tamaños pequeños. El layout responsivo revela el botón de **menu**que puede ser utilizado para ocultar la lista de usuarios y un botón de **compartir** que puede ser utilizado para mostrar la vista de bottom sheet.
 
-This Starter app demonstrates how:
+Esta Starter ap muestra cómo:
 
-*  Angular Material `layout` and `flex` options can easily configure HTML containers
-*  Angular Material components `<md-toolbar>`, `<md-sidenav>`, `<md-icon>` can be quickly used
+*  Las opciones `layout` y `flex` de Angular Material pueden configurar contenederos HTML facilmente
+*  Los components `<md-toolbar>`, `<md-sidenav>`, `<md-icon>` de Angular Material pueden ser utilizados rápidamente
 *  Custom controllers can use and show `<md-bottomsheet>` with HTML templates
-*  Custom controller can easily, programmatically open & close the SideNav component.
+*  Controladores perzonalizados pueden utilizar y mostrar `<md-bottomsheet>` dentro de los templates HTML
+*  Controladores perzonalizados pueden fácilmente, programáticamente abrir & cerrar el componente de barra de navegación lateral (SideNav).
 *  Responsive breakpoints and `$mdMedia` are used
+*  Los breakpoints responsivos y `$mdMedia` son utilizados
 *  Theming can be altered/configured using `$mdThemingProvider`
+*  El tema puede ser alterado/configurado usando `$mdThemingProvider`
 
 
-This sample application is purposed as both a learning tool and a skeleton application for a typical [AngularJS Material](http://angularjs.org/) web app: comprised of a Side navigation area and a content area. You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
+El propocito de esta aplicación de muestra es tanto como una herramienta de aprendizaje y un esqueleto para una aplicación web típica de [AngularJS Material](http://angularjs.org/): compuesta de un area de Navegación lateral y un area de contenido. La puedes utilizar, para inicializar rápidamente tus proyectos de aplicación web de angular y de anviente de desarrollo para estos 
+proyectos.
 
 <br/>
 - - -
 
-#### "How to build an App"
+#### "Cómo construir una Ap"
 
-Here are some generalized steps that may be used to conceptualize the application implementation process:
+Aquí hay algunos pasos generalizados que tal vez son usados para conceptualizar el proceso de implementacion de la aplicación:
 
-1. Plan your layout and the components you want to use
-2. Use hard-coded HTML and mock content to make sure the components appear as desired
+1. Planea tu layout y los componentes que quieres usar
+2. Utiliza HTML en código-duro y  and imitar el contenido para asegurarse que los componentes aparezcan de la forma deseada
 3. Wire components to your application logic
-> Use the seamless integration possible with Angular directives and controllers<br/>
-> This integration assumes that you have unit tested your app logic
-4. Add Responsive breakpoints
-5. Add Theming support
-6. Confirm ARIA compliance
-7. Write e2e Tests 
-> It is important to validate your app logic with Angular Material UI components.
+3. Conecta componentes a la lógica de tu aplicación
+> Utiliza la perfecta integración posible entre las directivas y los controladores de Angular<br/>
+> Esta integreción asume que haz hecho las pruebas unitarias de la lógica de tu ap
+4. Agrega breakpoints responsivos
+5. Agrega soporte par Temas
+6. Confirma la obediencia de ARIA
+7. Escribe pruebas e2e 
+> Es importante validar la lógica de tu ap con los componentes de IU de Angular Material.
 
 <br/>
-###### Wirefame 
+###### Wireframe 
 
-The illustration below shows how we planned the layout and identified the primary components that will be used in the Starter application:
+La siguiente ilustración muestra como planeamos el layout e identificamos los componentes primarios que serán utilizados in la Starter ap:
 
 <br/>
 ![plancomponents2](https://cloud.githubusercontent.com/assets/210413/6444676/c247c8f8-c0c4-11e4-8206-208f55cbceee.png)
 
-> Note: that container #2 (above) is a simple `<div>` container and not an Angular Material component.
+> Nota: el contenedor #2 (por encima) es un simple contenedor `<div>` y no un componente de Angular Material .
 
 <br/>
 - - -
 
-##### ES5 Tutorials
+##### Tutorial (ES5)
 
-These tutorials assume that you have already cloned the repository and executed the `npm install` command.
+Este tutorial asume que ya haz clonado el repositorio y ejecutado el comando `npm install`.
 
 You will notice html Tutorials #0 thru #8: these will be used to guide you through the development process. By following these tutorials stages, you will be very quickly introduced to the powerful features of Angular Material.
 
@@ -65,15 +69,13 @@ Each tutorial presents the resulting changes for that stage. It is recommended, 
 <br/>
 - - -
 
-### Step #1:
+### Paso #1:
 
-<span style="font-size:10px;">@see [tutorial_1.html](https://github.com/angular/material-start/blob/es5-tutorial/app/tutorial_1.html#L26-L34)<span>
+Aquí modificaste la aplicación shell [disponible en `tutorial_0.html`] para utilizar Angular-Material.
 
-Here you modified the shell application [available in `tutorial_0.html`] to use Angular-Material.
-
-* Use Bower to install angular-material with `bower install angular-material -D`
-* In the HTML, load the CSS and JS modules:
-* Configure the app dependency on 'ngMaterial'
+* Usa Bower para instalar angular-material con `bower install angular-material -D`
+* En el HTML, carga los módulos CSS y JS:
+* Configura en tu ap la dependencia 'ngMaterial'
 
 ```html
   <head>
@@ -87,38 +89,37 @@ Here you modified the shell application [available in `tutorial_0.html`] to use 
     <script type="text/javascript" src="./bower_components/angular-material/angular-material.js"></script>
 
 	<script>
-		angular.module('starterApp', ['ngMaterial']);
+		angular.module('starterAp', ['ngMaterial']);
 	</script>
   </body>
 ```
 
-### Step #2:
-
-<span style="font-size:10px;">@see [tutorial_2.html](https://github.com/angular/material-start/blob/es5-tutorial/app/tutorial_2.html#L30-L39)<span>
+### Paso #2:
 
 Here you used the wireframe planning and layout to identify the components and attributes needed.
+Aquí usaste la planeación del wireframe y layout para identificar los componentes y atributos necesarios.
 
-* Add the `<md-toolbar>`, `<md-sidenav>`, `<md-content>` containers
-> Note: that the md-sidenav is the container the Users **master** list view, and the md-content is the container for the User **detail** view.
-* Add the **layout** and **flex** attributes to configure the container layouts and sizing aspects.
-* Use `md-locked-open` to lock the sidenav open on the left
-* Use the `md-whiteframe-z2` to add a shadow the the sidenav
+* Agrega los contenedores `<md-toolbar>`, `<md-sidenav>`, `<md-content>`
+> Nota: que el contenedor md-sidenav es la vista **maestra** de la lista de Usuarios, y el md-content es el contenedor para la vista de **detale** de Usuario.
+* Agrega los atributos **layout** y **flex** para configurarl los contenedores layouts y los aspectos de tamaño.
+* Utiliza `md-locked-open` para asegurar que la sidenav esté abierta en el lado izquierdo
+* Utiliza el `md-whiteframe-z2` para agregar sombra a la sidenav
 
 ```html
-  <body ng-app="starterApp" layout="column">
+  <body ng-app="starterAp" layout="column">
 
-	<!-- Container #1 (see wireframe) -->
+	<!-- Contenedor #1 (ver wireframe) -->
     <md-toolbar layout="row" >
-      <h1>Angular Material - Starter App</h1>
+      <h1>Angular Material - Starter Ap</h1>
     </md-toolbar>
 
-	<!-- Container #2 -->
+	<!-- Contenedor #2 -->
     <div flex layout="row">
 
-		<!-- Container #3 -->
+		<!-- Contenedor #3 -->
         <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2"></md-sidenav>
 
-		<!-- Container #4 -->
+		<!-- Contenedor #4 -->
         <md-content flex id="content"></md-content>
 
     </div>
@@ -126,26 +127,23 @@ Here you used the wireframe planning and layout to identify the components and a
   </body>
 ```
 
-### Step #3:
+### Paso #3:
 
-<span style="font-size:10px;">@see [tutorial_3.html](https://github.com/angular/material-start/blob/es5-tutorial/app/tutorial_3.html#L43-L72)<span>
+Aquí usarás elementos en código duro para confirmar el rendering y el layout de los elementos contenedores hijos y componentes Angular Material.
 
-
-Here you will use hard-coded elements to confirm rendering and layout of the container child elements and Angular Material components.
-
-* Add the `<md-toolbar>`, `<md-sidenav>`, `<md-content>` containers
-> Note: that the md-sidenav is the container for the **master** Users List view, and the md-content is the container for the **detail** User Detail view.
-* Add the **layout** and **flex** attributes to configure the container layouts and sizing aspects.
-* Use `md-locked-open` to lock the sidenav open on the left
-* Use the `md-whiteframe-z2` to add a shadow the the sidenav
+* Agrega los contenedores `<md-toolbar>`, `<md-sidenav>`, `<md-content>`
+> Nota: que el contenedor md-sidenav es la vista **maestra** de la lista de Usuarios, y el md-content es el contenedor para la vista de **detale** de Usuario.
+* Agrega los atributos **layout** y **flex** para configurarl los contenedores layouts y los aspectos de tamaño.
+* Utiliza `md-locked-open` para asegurar que la sidenav esté abierta en el lado izquierdo
+* Utiliza el `md-whiteframe-z2` para agregar sombra a la sidenav
 
 ```html
-  <body ng-app="starterApp" layout="column">
+  <body ng-app="starterAp" layout="column">
 
 	<md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
 	  <md-list>
 
-		<!-- List item #1 -->
+		<!-- Item de lista #1 -->
 		<md-item >
 			<md-button>
 			  <md-icon md-svg-src="./assets/svg/avatar-1.svg" class="avatar"></md-icon>
@@ -153,7 +151,7 @@ Here you will use hard-coded elements to confirm rendering and layout of the con
 			</md-button>
 		</md-item>
 
-		<!-- List item #2 -->
+		<!-- Item de lista #2 -->
 		<md-item >
 			<md-button>
 			 <md-icon md-svg-src="./assets/svg/avatar-4.svg" class="avatar"></md-icon>
@@ -165,28 +163,27 @@ Here you will use hard-coded elements to confirm rendering and layout of the con
 	</md-sidenav>
 
 	<md-content flex id="content">
-	  <!-- User details sample -->
+	  <!-- Ejemplo del detalle de Usuario -->
 
 	  <md-icon md-svg-src="./assets/svg/avatar-1.svg" class="avatar"></md-icon>
 	  <h2>Lia Luogo</h2>
 	  <p>
-		I love cheese...
+		Amo el queso...
 	  </p>
 	</md-content>
 
   </body>
 ```
 
-### Step #4:
+### Paso #4:
 
-<span style="font-size:10px;">@see [tutorial_4.html](https://github.com/angular/material-start/blob/es5-tutorial/app/tutorial_4.html#L85-L91)<span>
+Aquí integras la lógica de tu aplicación.
 
-Here you integrate your custom, application logic.
-
-* Define a Angular module for your custom code
+* Define un módulo de Angular para tu código
 * Define your data services, models, and controllers
-* Load your custom code
-* Register your Angular module for runtime DI
+* Define tus servicios, modelos y controladores
+* Carga tu código
+* Registra tu módulo de Angular para la DI (inyección de dependencias)
 
 ```html
 <script src="./src/users/Users.js"></script>
@@ -195,25 +192,23 @@ Here you integrate your custom, application logic.
 
 <script type="text/javascript">
 
-  angular.module('starterApp', ['ngMaterial', 'users']);
+  angular.module('starterAp', ['ngMaterial', 'users']);
 
 </script>
 ```
 
-### Step #5:
+### Paso #5:
 
-<span style="font-size:10px;">@see [tutorial_5.html](https://github.com/angular/material-start/blob/es5-tutorial/app/tutorial_5.html#L52-L71)<span>
+Aquí remplazarás el HTML en código duro por código dinámico utilizando directivas de Angular (ej ng-repeat) y la interpolación `{{ }}`.
 
-Here you will replace the hardcoded HTML with dynamic markup using Angular directives (eg ng-repeat) and `{{ }}` interpolation markup.
-
-* Use dynamic HTML that will be compiled and rendered by Angular
-* Register a custom icon set of 'user' avatars for the user list
-* Register **menu** and **share** icon urls for the md-buttons
+* Usa código HTML dinámico que será compilado y ejecutado por Angular
+* Registra un set de íconos de los avatares de 'usurio' para la lista de usuario
+* Register las urls de los íconos de **menú** y **compartir** para los md-buttons 
 
 ```html
- <!-- Wireframe Container #2 -->
+ <!-- Contenedor Wireframe #2 -->
  <div flex layout="row">
- 	<!-- Wireframe Container #3 -->
+ 	<!-- Contenedor Wireframe #3 -->
 	<md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
 	  <md-list>
 		<md-item ng-repeat="it in ul.users">
@@ -225,7 +220,7 @@ Here you will replace the hardcoded HTML with dynamic markup using Angular direc
 	  </md-list>
 	</md-sidenav>
 
-	<!-- Wireframe Container #4 -->
+	<!-- Contenedor Wireframe #4 -->
 	<md-content flex id="content">
 	  <md-icon md-svg-icon="{{ul.selected.avatar}}" class="avatar"></md-icon>
 	  <h2>{{ul.selected.name}}</h2>
@@ -240,7 +235,7 @@ Here you will replace the hardcoded HTML with dynamic markup using Angular direc
 
  <script type="text/javascript">
   angular
-	  .module('starterApp', ['ngMaterial', 'users'])
+	  .module('starterAp', ['ngMaterial', 'users'])
 	  .config(function( $mdIconProvider ){
 
 		  // Register the user `avatar` icons
@@ -252,33 +247,31 @@ Here you will replace the hardcoded HTML with dynamic markup using Angular direc
  </script>
 ```
 
-### Step #6:
+### Paso #6:
 
-<span style="font-size:10px;">@see [tutorial_6.html](https://github.com/angular/material-start/blob/es5-tutorial/app/tutorial_6.html#L51)<span>
+Aquí agregaras breakpoints de responsividad para que la aplicación se adapte a diferentes tamaños de dispositivo.
 
-Here you will add responsive breakpoints so the application layout will adapt to different device display sizes.
-
-* Lock the Users list open if device display is wider than > 600px; hide otherwise.
-* Hide the Toolbar menu icon button if the Users list is open.
-* Add `click` support for the **menu** and **share** buttons.
-* Register icons for bottomsheet
+* Asegura que la lista de Usuarios esté abierta para dispositivos más anchos de > 600px; que se oculte de lo contrario.
+* Oculta el ícono de la Toolbar si la lista de Usuarios está abierta.
+* Agrega soporte para `click` a los botones de **menú** y **compartir**.
+* Registra los íconos para la bottomsheet
 
 ```html
 <body>
-	<!-- Wireframe Container #1 -->
+	<!-- Contenedor Wireframe #1 -->
     <md-toolbar layout="row">
       <md-button class="menu" hide-gt-sm ng-click="ul.toggleList()"></md-button>
     </md-toolbar>
 
-	<!-- Wireframe Container #2 -->
+	<!-- Contenedor Wireframe #2 -->
 	<div flex layout="row">
 
-	 <!-- Wireframe Container #3 -->
+	 <!-- Contenedor Wireframe #3 -->
 	 <md-sidenav md-is-locked-open="$media('gt-sm')"
 				 md-component-id="left">
 	 </md-sidenav>
 
-	 <!-- Wireframe Container #4 -->
+	 <!-- Contenedor Wireframe #4 -->
 	 <md-content flex id="content">
 	  <md-button class="share" md-no-ink ng-click="ul.share($event)"></md-button>
 	 </md-content>
@@ -287,13 +280,13 @@ Here you will add responsive breakpoints so the application layout will adapt to
 </body>
 ```
 
-Register the **share** icons displayed in the User Detail view bottomsheet:
+Registara los íconos de **compartir** para que se desplieguen el la bottomsheet de la vista de Detalle de Usuario:
 
 ```html
 <script type="text/javascript">
 
   angular
-	  .module('starterApp', ['ngMaterial', 'users'])
+	  .module('starterAp', ['ngMaterial', 'users'])
 	  .config(function($mdIconProvider){
 
 		  $mdIconProvider
@@ -310,61 +303,57 @@ Register the **share** icons displayed in the User Detail view bottomsheet:
 ```
 
 
-### Step #7:
+### Paso #7:
 
-<span style="font-size:10px;">@see [tutorial_7.html](https://github.com/angular/material-start/blob/es5-tutorial/app/tutorial_7.html#L63-L68)<span>
+Aquí configurarás un tema diferente para utilizarlo.
 
-Here you will configure a different, darker theme to be used.
-
-* Use `$mdThemingProvider` to configure a different theme using primary colors from the **brown** color palette and accent colors from the **red** color palette.
+* Usa `$mdThemingProvider` para onfigurar un tema diferente utilizando como color primario la paleta **verde** y para los colores acentuados la paleta de color **rojo**.
 
 ```html
 <script type="text/javascript">
 
   angular
-	  .module('starterApp', ['ngMaterial', 'users'])
+	  .module('starterAp', ['ngMaterial', 'users'])
 	  .config(function($mdThemingProvider, $mdIconProvider){
 
 		  $mdThemingProvider.theme('default')
-			  .primaryPalette('brown')
+			  .primaryPalette('green')
 			  .accentPalette('red');
 	  });
 
 </script>
 ```
 
-### Step #8:
+### Paso #8:
 
-<span style="font-size:10px;">@see [tutorial_8.html](https://github.com/angular/material-start/blob/es5-tutorial/app/tutorial_8.html#L19)<span>
+Aquí arreglaras todas las alertas de ARIA que Angular Material despliegue en la consola de Desarrollo.
 
-Here you will fix any ARIA warnings that Angular Material may display in the Dev console.
-
-* Insert `aria-label` attributes for mdButton components that do not have labels.
+* Inserta atributos `aria-label` para los componentes mdButton que no tengan etiquetas.
 
 ```html
 <body>
-	<!-- Wireframe Container #1 -->
+	<!-- Contenedor Wireframe #1 -->
     <md-toolbar layout="row">
-      <md-button class="menu" aria-label="Show User List"></md-button>
+      <md-button class="menu" aria-label="Mostrar Lista de Usuarios"></md-button>
     </md-toolbar>
 
-	<!-- Wireframe Container #2 -->
+	<!-- Contenedor Wireframe #2 -->
 	<div flex layout="row">
 
-	 <!-- Wireframe Container #3 -->
+	 <!-- Contenedor Wireframe #3 -->
 	 <md-sidenav>...</md-sidenav>
 
-	 <!-- Wireframe Container #4 -->
+	 <!-- Contenedor Wireframe #4 -->
 	 <md-content flex id="content">
-	  <md-button class="share" aria-label="Share"></md-button>
+	  <md-button class="share" aria-label="Compartir"></md-button>
 	 </md-content>
 
 	</div>
 </body>
 ```
 
-## Summary
+## Resumen
 
-With only eight (8) Tutorial Steps and a few minutes of work, we have quickly created a functional Angular Material application that is beautiful, responsive, theme'ed, accessible, and easily maintained.
+Con solo un Tutorial de ocho (8) Pasos y unos pocos minutos de trabajo, hemos creado rápidamente una aplicación funcional de Angular Material que es bonita, responsiva, tematizada, accesible, y facilmente mantenible.
 
 

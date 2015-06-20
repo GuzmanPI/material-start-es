@@ -17,32 +17,32 @@
       {
         name: 'Lia Lugo',
         avatar: 'svg-1',
-        content: 'I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire.'
+        content: 'Me encanta el queso, especialmente airedale queso. Queso y galletas coliflor halloumi queso requesón suizo caerphilly fondue boursin. Vaca port-salut Camembert de Normandie feta de queso macarrones que se mudó a mi queso babybel boursin. Red roquefort leicester squirty boursin queso jarlsberg azul castello caerphillyTiza y queso. Lancashire.'
       },
       {
         name: 'George Duke',
         avatar: 'svg-2',
-        content: 'Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.'
+        content: 'Reversus ipsum Zombie ab infierno viral, nam rick Grimes malum cerebro. De carne pesado animata corpus quaeritis. Cerebros summus sientan, morbo vel maleficia? De apocalypsi Gorger Omero muertos vivientes sobreviviente dictum mauris.'
       },
       {
         name: 'Gener Delosreyes',
         avatar: 'svg-3',
-        content: "Raw denim pour-over readymade Etsy Pitchfork. Four dollar toast pickled locavore bitters McSweeney's blog. Try-hard art party Shoreditch selfies. Odd Future butcher VHS, disrupt pop-up Thundercats chillwave vinyl jean shorts taxidermy master cleanse letterpress Wes Anderson mustache Helvetica. Schlitz bicycle rights chillwave irony lumberhungry Kickstarter next level sriracha typewriter Intelligentsia, migas kogi heirloom tousled. Disrupt 3 wolf moon lomo four loko. Pug mlkshk fanny pack literally hoodie bespoke, put a bird on it Marfa messenger bag kogi VHS."
+        content: "Denim crudo vertido sobre readymade Etsy Pitchfork. Cuatro dólar tostadas escabeche amargos locavore el blog de McSweeney. Trate de difícil partido del arte selfies Shoreditch. Odd Future carnicero VHS, interrumpir Thundercats chillwave vinilo pantalones cortos de jean emergentes taxidermia tipografía maestro de limpiar Wes Anderson bigote Helvetica. Derechos de bicicleta Schlitz lumberhungry ironía chillwave Kickstarter máquina de escribir sriracha siguiente nivel intelectualidad, migas kogi reliquia alborotado. Interrumpir 3 lobo luna lomo cuatro loko. Pug mlkshk riñonera medida, literalmente, sudadera con capucha, puso un pájaro en él Marfa bolsa de mensajero kogi VHS."
       },
       {
         name: 'Lawrence Ray',
         avatar: 'svg-4',
-        content: 'Scratch the furniture spit up on light gray carpet instead of adjacent linoleum so eat a plant, kill a hand pelt around the house and up and down stairs chasing phantoms run in circles, or claw drapes. Always hungry pelt around the house and up and down stairs chasing phantoms.'
+        content: 'Rayar los muebles escupir en la alfombra de color gris claro en lugar de linóleo adyacente por lo que comer una planta, matar a una piel de la mano alrededor de la casa y subir y bajar escaleras persiguiendo fantasmas correr en círculos, o garra cortinas. Siempre piel de hambre en la casa y subir y bajar escaleras persiguiendo fantasmas.'
       },
       {
         name: 'Ernesto Urbina',
         avatar: 'svg-5',
-        content: 'Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Bubbli greplin stypi prezi mzinga heroku wakoopa, shopify airbnb dogster dopplr gooru jumo, reddit plickers edmodo stypi zillow etsy.'
+        content: 'Webtwo ipsum dolor sit amet, eskobo chumby Doostang de Bebo. Bubbli Greplin stypi Prezi Mzinga heroku Wakoopa, Shopify Airbnb dogster Dopplr gooru jumo, reddit plickers Edmodo stypi Zillow etsy.'
       },
       {
         name: 'Gani Ferrer',
         avatar: 'svg-6',
-        content: "Lebowski ipsum yeah? What do you think happens when you get rad? You turn in your library card? Get a new driver's license? Stop being awesome? Dolor sit amet, consectetur adipiscing elit praesent ac magna justo pellentesque ac lectus. You don't go out and make a living dressed like that in the middle of a weekday. Quis elit blandit fringilla a ut turpis praesent felis ligula, malesuada suscipit malesuada."
+        content: "Lebowski ipsum sí? ¿Qué crees que sucede cuando usted consigue rad? Que a su vez en su tarjeta de la biblioteca? Obtenga una nueva licencia de conducir? Deja de ser impresionante? Dolor sit amet, consectetur adipiscing elit Praesent ac magna justo pellentesque ac lectus. Usted no salir y hacer la vida vestida así en el medio de un día laborable. Quis elit blandit fringilla una lígula felis Praesent turpis ut, malesuada malesuada suscipit."
       }
     ];
 
